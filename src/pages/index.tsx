@@ -29,7 +29,7 @@ const PercentageCalculator: React.FC = () => {
 
   return (
   <div className='flex justify-center my-[10%]  gap-4'>
-      <div className="box bg-gray-600">
+      <div className="box bg-gray-600 p-4 rounded-lg">
       <h1>Percentage Calculator</h1>
       <div>
         <label>
@@ -37,6 +37,7 @@ const PercentageCalculator: React.FC = () => {
           <input
             type="number"
             value={pixelWidth}
+            className='p-2 mb-2 rounded-md'
             onChange={(e) => setPixelWidth(Number(e.target.value))}
           />
         </label>
@@ -47,6 +48,7 @@ const PercentageCalculator: React.FC = () => {
           <input
             type="number"
             value={pixelHeight}
+            className='p-2 rounded-lg'
             onChange={(e) => setPixelHeight(Number(e.target.value))}
           />
         </label>
