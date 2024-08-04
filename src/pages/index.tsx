@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 interface PercentageResult {
@@ -29,8 +30,8 @@ const PercentageCalculator: React.FC = () => {
 
   return (
   <div className='flex justify-center my-[10%]  gap-4'>
-      <div className="box bg-gray-600 p-4 rounded-lg">
-      <h1>Percentage Calculator</h1>
+      <div className="box bg-white/30 p-4 rounded-lg text-white">
+      <h1 className='mx-[5em] mb-3'>Percentage Calculator</h1>
       <div>
         <label>
           Width in pixels:
@@ -54,11 +55,13 @@ const PercentageCalculator: React.FC = () => {
         </label>
       </div>
       <div>
-        <p>Width Percentage: {result.widthPercentage}</p>
-        <p>Height Percentage: {result.heightPercentage}</p>
+        <p className='text-red-600'>Width Percentage: {result.widthPercentage}</p>
+        <p className='text-green-600'>Height Percentage: {result.heightPercentage}</p>
       </div>
+      <Link href="/calc" target="_blank" className='white
+      '> GoTo </Link>
       </div>
-    </div>
+          </div>
   );
 };
 
