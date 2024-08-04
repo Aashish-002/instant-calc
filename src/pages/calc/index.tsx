@@ -38,7 +38,7 @@ const PercentageCalculator: React.FC = () => {
           <input
             type="number"
             value={pixelWidth}
-            className='p-2 mb-2 rounded-md'
+            className='p-2 mb-2 rounded-md text-black'
             onChange={(e) => setPixelWidth(Number(e.target.value))}
           />
         </label>
@@ -49,7 +49,7 @@ const PercentageCalculator: React.FC = () => {
           <input
             type="number"
             value={pixelHeight}
-            className='p-2 rounded-lg'
+            className='p-2 rounded-lg text-black'
             onChange={(e) => setPixelHeight(Number(e.target.value))}
           />
         </label>
